@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tat-nguy <tat-nguy@student.42perpignan.fr  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 19:22:35 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/04 20:21:34 by tat-nguy         ###   ########.fr       */
+/*   Created: 2024/11/04 19:58:35 by tat-nguy          #+#    #+#             */
+/*   Updated: 2024/11/04 20:21:08 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int c)
+int	ft_isprint(int c)
 {
-	if (c >= 0 && c <= 127)
+	if (c >= 32 && c <= 126)
 		return (1);
 	else
 		return (0);
@@ -24,9 +24,10 @@ int	ft_isascii(int c)
 
 int	main(void)
 {
-	int c = 200;
-	printf("isascii: %i\n", isascii(c));
-	printf("ft_isascii: %i\n", ft_isascii(c));
+	int	c = 92;
+	printf("%c\n", c);
+	printf("isprint: %i\n", isprint(c));
+	printf("ft_isprint: %i\n", ft_isprint(c));
 	return (0);
 }
 */
