@@ -16,13 +16,15 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*s;
+	size_t	total_size;
 	size_t	i;
 
-	s = malloc(nmemb * size);
+	total_size = nmemb * size;
+	s = malloc(total_size);
 	if (s == NULL)
 		return (NULL);
 	i = 0;
-	while (i < size)
+	while (i < total_size)
 	{
 		((char *)s)[i] = 0;
 		i++;
@@ -30,16 +32,17 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	return (s);
 }
 
-
+/*
 #include <stdio.h>
 int	main(void)
 {
-	int *array = calloc(4, sizeof(int));
+	int *array = ft_calloc(4, sizeof(int));
 	int i = 0;
-	while (i < 12)
+	while (i < 4)
 	{
 		printf("%i", array[i]);
 		i++;
 	}
 	free(array);
 }
+*/
