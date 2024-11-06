@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// it allocate memory like malloc but then it set memory to '0'
+// it allocate memory like malloc but then it set memory to '0' each bytes
+// nmemb: number of elements, size: bytes each member
 #include <stdlib.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
