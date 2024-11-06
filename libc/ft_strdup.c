@@ -12,9 +12,9 @@
 
 #include <stdlib.h>
 
-int	ft_len(const char *str)
+static size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -24,12 +24,12 @@ int	ft_len(const char *str)
 
 char	*ft_strdup(const char *s)
 {
-	int		i;
-	int		len;
+	size_t	i;
+	size_t	len;
 	char	*dup;
 
 	i = 0;
-	len = ft_len(s);
+	len = ft_strlen(s);
 	dup = malloc(sizeof(char) * (len + 1));
 	if (dup == NULL)
 		return (NULL);

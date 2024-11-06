@@ -22,9 +22,9 @@
 **	The new string. Or NULL if the allocation fails.
 */
 
-#include <stdlib.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char *str)
+static size_t	ft_strlen(const char *str)
 {
 	size_t	i;
 
@@ -34,7 +34,7 @@ size_t	ft_strlen(const char *str)
 	return (i);
 }
 
-char	*ft_strcat(char *dest, const char *src)
+static char	*ft_strcat(char *dest, const char *src)
 {
 	size_t	i;
 	size_t	d_len;
@@ -75,5 +75,6 @@ int main(void)
 	char s2[] = "it's a beautiful day.";
 	char *new = ft_strjoin(s1, s2);
 	printf("ft_strjoin: %s\n", new);
+	free(new);
 }
 */

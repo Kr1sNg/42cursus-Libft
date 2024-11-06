@@ -10,16 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strchr(const char *str, int c)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0' && str[i] != c)
+	while (str[i] != '\0')
+	{
+		if (str[i] == c)
+			return ((char *)(str + i));
 		i++;
-	if (str[i] == c || c == '\0')
+	}
+	if (c == '\0')
 		return ((char *)(str + i));
-	return (0);
+	return (NULL);
 }
 
 /*
@@ -28,7 +34,7 @@ char	*ft_strchr(const char *str, int c)
 int	main(void)
 {
 	const char *str = "This is 9";
-	int	c = '.';
+	int	c = '9';
 	printf("strchr: %s.\n", strchr(str, c));
 	printf("ft_strchr: %s.\n", ft_strchr(str, c));
 	return (0);

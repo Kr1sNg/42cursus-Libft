@@ -1,34 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 10:27:59 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/05 14:34:56 by tat-nguy         ###   ########.fr       */
+/*   Created: 2024/11/06 17:36:12 by tat-nguy          #+#    #+#             */
+/*   Updated: 2024/11/06 17:36:22 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+int main(void)
 {
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
+	char s1[] = "Today is Monday, ";
+	char s2[] = "it's a beautiful day.";
+	char *new = ft_strjoin(s1, s2);
+	printf("ft_strjoin: %s\n", new);
 }
-
-/*
-#include <stdio.h>
-int	main(void)
-{
-	char *str = "This is 9";
-	printf("strlen: %lu\n", strlen(str));
-	printf("ft_strlen: %lu\n", ft_strlen(str));
-	return (0);
-}
-*/
