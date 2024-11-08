@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:04:40 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 08:26:41 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/08 18:56:32 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,13 +47,13 @@ int	ft_atoi(const char *nptr)
 	return (nb * sign);
 }
 
-/*
+
 #include <stdlib.h>
 #include <stdio.h>
 int main(void)
 {
-	char *str = "    -2147483647";
+	char *str = "    2147483647";
 	printf("atoi: %i\n", atoi(str));
 	printf("ft_atoi: %i\n", ft_atoi(str));
 }
-*/
+
