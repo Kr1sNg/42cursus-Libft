@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 09:45:51 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/06 09:45:55 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/08 17:59:53 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 #include <stdio.h>
 int main(void)
 {
-	char	src[] = "";
-	char	dst1[12] = " ";
-	char	dst2[12] = " ";
+	char	src[] = "R";
+	char	dst1[] = "A";
+	char	dst2[] = "A";
 
-	printf("memcpy: %s\n", (char *)memcpy(dst1, src, 7));
-	printf("ft_memcpy: %s\n", (char *)ft_memcpy(dst2, src, 7));
+	printf("memcpy: %s\n", (char *)memcpy(dst1, src, 2));
+	printf("ft_memcpy: %s\n", (char *)ft_memcpy(dst2, src, 2));
 }
 */
