@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 15:35:19 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/06 15:35:40 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/08 18:18:20 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,17 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	slen;
 	char	*sub;
 
+	if (!s)
+		return (NULL);
 	slen = ft_strlen(s);
+	if (start >= slen)
+		return (NULL);
+	len = slen - start;
 	sub = malloc(sizeof(char) * (len + 1));
 	if (!sub)
 		return (NULL);
 	i = 0;
-	while (i < len && start < slen)
+	while (i < len)
 	{
 		sub[i] = s[start + i];
 		i++;
@@ -48,8 +53,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 #include <stdio.h>
 int	main(void)
 {
-	char *s = "This is 9.";
-	unsigned int start = 1;
+	char *s = "This is 9";
+	unsigned int start = 12;
 	unsigned int len = 6;
 	char *sub = ft_substr(s, start, len);
 	printf("ft_substr: %s\n", sub);

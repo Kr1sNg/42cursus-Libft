@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:43:38 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 00:08:52 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/08 18:20:58 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_isalpha(int c)
 #include <ctype.h>
 int	main(void)
 {
-	int c = 123;
+	int c = 'a';
 	int i = isalpha(c);
 	printf("isalpha: %i\n", i);
 	int	a = ft_isalpha(c);
