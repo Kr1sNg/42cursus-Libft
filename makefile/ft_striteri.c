@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 12:36:13 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/07 12:36:15 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/08 08:32:22 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 
-	if (!s || !f)
+	if (!f)
 		return ;
 	i = 0;
 	while (s[i])
@@ -41,26 +41,20 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 /*
 #include <stdio.h>
 // Convert character to uppercase if index is even, lowercase if odd
-void	ft_toupper_even(unsigned int i, char *s)
+void	ft_touplow(unsigned int i, char *s)
 {
-	if (i % 2 == 0)
-	{
-		if (s[i] >= 'a' && s[i] <= 'z')
+	if (s[i] >= 'a' && s[i] <= 'z')
 			s[i] = s[i] - ('a' - 'A');
-	}
-	else
-	{
-		if (s[i] >= 'A' && s[i] <= 'Z')
+	else if (s[i] >= 'A' && s[i] <= 'Z')
 			s[i] = s[i] + ('a' - 'A');
-	}
 }
 
 int main(void)
 {
-	char	s[] = "This is CS 50 from Harvard University.";
+	char	s[] = "";
 	printf("ft_striteri before: %s\n", s);
 
-	ft_striteri(s, ft_toupper_even);
+	ft_striteri(s, ft_touplow);
 	printf("ft_striteri after: %s\n", s);
 	return (0);
 }

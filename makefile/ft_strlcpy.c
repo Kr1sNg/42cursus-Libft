@@ -3,24 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <tat-nguy@student.42perpignan.fr  +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 10:20:04 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/05 14:02:15 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/08 08:31:03 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static	size_t	ft_len(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -28,7 +18,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	len_src;
 
 	i = 0;
-	len_src = ft_len(src);
+	len_src = ft_strlen(src);
 	if (size == 0)
 		return (len_src);
 	while (i < (size - 1) && src[i] != '\0')

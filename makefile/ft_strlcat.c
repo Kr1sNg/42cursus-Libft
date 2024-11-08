@@ -3,26 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <tat-nguy@student.42perpignan.fr  +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 11:43:29 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/05 14:35:31 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/08 08:30:30 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // return length of (src + dest) or (src + size (if size < dest))
 
 #include "libft.h"
-
-/*size_t	ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}*/
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

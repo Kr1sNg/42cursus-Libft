@@ -6,7 +6,7 @@
 #    By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 15:19:42 by tat-nguy          #+#    #+#              #
-#    Updated: 2024/11/07 15:19:52 by tat-nguy         ###   ########.fr        #
+#    Updated: 2024/11/08 00:01:37 by tat-nguy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ BONUS_SRCS	=
 
 BONUS_OBJS	= $(BONUS_SRCS:.c=.o)
 
-INCLUDE		= libft.h
+INCLUDE		= .
 
 # Rules
 $(NAME):	$(OBJS)
