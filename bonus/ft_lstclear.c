@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 09:22:49 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 11:17:12 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/08 15:53:53 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,13 @@ void    ft_lstclear(t_list **lst, void (*del)(void *))
 {
     t_list  *tmp;
 
-    while (lst != NULL)
+    while (*lst != NULL)
     {
-        tmp = lst;
-        lst = tmp->next;
+        tmp = *lst;
+        *lst = (*lst)->next;
         if (del != NULL)
             del(tmp->content);            
         free(tmp);
     }
+    *lst = NULL;
 }

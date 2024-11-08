@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 15:19:42 by tat-nguy          #+#    #+#              #
-#    Updated: 2024/11/08 00:01:37 by tat-nguy         ###   ########.fr        #
+#    Updated: 2024/11/08 14:11:26 by tat-nguy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,9 @@ SRCS 		= ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 
 OBJS 		= $(SRCS:.c=.o)
 
-BONUS_SRCS	= 
+BONUS_SRCS	= ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
+				ft_lstdelone.c ft_lstiter.c ft_lstlast.c ft_lstmap.c \
+				ft_lstnew.c ft_lstsize.c \
 
 BONUS_OBJS	= $(BONUS_SRCS:.c=.o)
 

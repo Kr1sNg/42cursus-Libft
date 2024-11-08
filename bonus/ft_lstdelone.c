@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 09:22:36 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 12:18:12 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/08 15:30:24 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,9 @@
 
 void    ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-    if (!lst || !del)
+    if (!lst)
         return ;
-    del(lst->content);
+    if (del)
+        del(lst->content);
     free(lst);
 }

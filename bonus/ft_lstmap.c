@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 12:22:32 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 13:53:10 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:25:57 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ t_list  *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
     t_list  *newnode;
     
     if (!lst || !f)
-        return (NULL)
+        return (NULL);
     newhead = ft_lstnew(lst->content);
     if (!newhead)
         return (NULL);
