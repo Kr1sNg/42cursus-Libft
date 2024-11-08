@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 14:01:06 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 15:54:27 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/08 16:02:47 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,14 +74,14 @@ int main(void)
     ft_lstiter(mapped_list, print_content);
     printf("NULL\n");
 
-   /* // Testing ft_lstdelone
+    // Testing ft_lstdelone
     printf("Deleting the element (2):\n");
     t_list *temp = head->next->next; //xoa 2
     head->next->next = head->next->next->next;
     ft_lstdelone(temp, del_content);
     ft_lstiter(head, print_content);
     printf("NULL\n");
-    */
+    
     // Testing ft_lstclear
     printf("Clearing the mapped list:\n");
     ft_lstclear(&mapped_list, del_content);
