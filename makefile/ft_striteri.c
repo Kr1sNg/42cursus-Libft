@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 12:36:13 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 08:32:22 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/08 10:47:16 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,12 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	i = 0;
 	while (s[i])
 	{
-		f(i, s);
+		(*f)(i, s);
 		i++;
 	}
 }
 
-/*
+
 #include <stdio.h>
 // Convert character to uppercase if index is even, lowercase if odd
 void	ft_touplow(unsigned int i, char *s)
@@ -51,11 +51,10 @@ void	ft_touplow(unsigned int i, char *s)
 
 int main(void)
 {
-	char	s[] = "";
+	char	s[] = "ThIs Is Cs50 FrOm HaRdVaRd UnIvErSiTy";
 	printf("ft_striteri before: %s\n", s);
 
-	ft_striteri(s, ft_touplow);
+	ft_striteri(s, &ft_touplow);
 	printf("ft_striteri after: %s\n", s);
 	return (0);
 }
-*/

@@ -6,7 +6,7 @@
 /*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 12:02:23 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/07 12:02:25 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/08 10:43:38 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ char	ft_toupper_even(unsigned int i, char c)
 int main(void)
 {
 	char	*s = "This is CS 50 from Harvard University.";
-	char	*t = ft_strmapi(s, ft_toupper_even);
+	char	*t = ft_strmapi(s, &ft_toupper_even);
 
 	printf("ft_strmapi: %s\n", t);
 	free(t);
