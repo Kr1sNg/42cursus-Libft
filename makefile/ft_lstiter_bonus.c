@@ -1,29 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/08 08:53:21 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 17:06:11 by tat-nguy         ###   ########.fr       */
+/*   Created: 2024/11/08 12:21:55 by tat-nguy          #+#    #+#             */
+/*   Updated: 2024/11/09 11:57:46 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 **	LIBRARY: N/A
-**	SYNOPSIS: add node to the beginning of the linked list
-**
+**	SYNOPSIS: apply function to all the node of linked list
+**  
+**	DESCRIPTION:
+** 	Iterates the list 'lst' and applies the function 'f' on the content of
+**  each node.
+**    
 **	RETURN VALUE: N/A
 */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (new)
+	if (!lst || !f)
+		return ;
+	while (lst != NULL)
 	{
-		new->next = *lst;
-		*lst = new;
+		f(lst->content);
+		lst = lst->next;
 	}
 }

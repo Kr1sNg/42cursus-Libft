@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 16:45:13 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 08:29:54 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/09 12:00:41 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 **
 **	DESCRIPTION:
 ** 	Allocates (with malloc(3)) and returns a new string, which is the result
-**	of the concatenation of ’s1’ then ’s2’.
+**	of the concatenation of 's1' then 's2'.
 **
 **	RETURN VALUE:
 **	The new string. Or NULL if the allocation fails.

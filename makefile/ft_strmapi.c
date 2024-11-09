@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 12:02:23 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 10:43:38 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/09 12:01:12 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 **	successive applications of 'f'.
 **
 **	RETURN VALUE:
-**	The string created from the successive applications of ’f’.
+**	The string created from the successive applications of 'f'.
 **	Or NULL if the allocation fails.
 */
 

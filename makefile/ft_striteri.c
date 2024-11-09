@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 12:36:13 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 17:11:32 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/09 12:02:38 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 **	SYNOPSIS: modify string with specified function
 **
 **	DESCRIPTION:
-** 	Applies the function ’f’ on each character of the string 's' passed as
+** 	Applies the function 'f' on each character of the string 's' passed as
 **	argument, passing its index as first argument. Each character is passed by
-**	address to ’f’ to be modified if necessary.
+**	address to 'f' to be modified if necessary.
 **
 **	RETURN VALUE: N/A
 */

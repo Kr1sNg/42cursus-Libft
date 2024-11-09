@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 14:05:40 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/07 14:05:43 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/09 11:59:35 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 **	SYNOPSIS: write a number to the given file
 **
 **	DESCRIPTION:
-** 	Outputs the integer ’n’ to the given file descriptor.
+** 	Outputs the integer 'n' to the given file descriptor.
 **
 **	RETURN VALUE: N/A
 */

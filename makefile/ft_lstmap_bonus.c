@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 12:22:32 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 17:14:53 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/09 11:55:36 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 **	SYNOPSIS: create new list from the given linked list
 **  
 **	DESCRIPTION:
-** 	Iterates the list ’lst’ and applies the function ’f’ on the content of
+** 	Iterates the list 'lst' and applies the function 'f' on the content of
 **  each node. Creates a new list resulting of the successive applications of
-**  the function ’f’. The ’del’ function is used to delete the content of a 
+**  the function 'f'. The 'del' function is used to delete the content of a 
 **  node if needed.
 **    
 **	RETURN VALUE:

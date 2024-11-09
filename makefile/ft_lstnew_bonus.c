@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 08:43:06 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 17:10:14 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/09 11:58:24 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 **
 **	DESCRIPTION:
 ** 	Allocates (with malloc(3)) and returns a new node. The member variable
-**  ’content’ is initialized with the value of the parameter ’content’.
-**  The variable ’next’ is initialized to NULL.
+**  'content' is initialized with the value of the parameter 'content'.
+**  The variable 'next' is initialized to NULL.
 **
 **	RETURN VALUE:
 **	The new node.

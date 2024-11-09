@@ -6,7 +6,7 @@
 #    By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/07 15:19:42 by tat-nguy          #+#    #+#              #
-#    Updated: 2024/11/09 12:15:16 by tat-nguy         ###   ########.fr        #
+#    Updated: 2024/11/09 12:11:59 by tat-nguy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,9 @@ BONUS_OBJS	= $(BONUS_SRCS:.c=.o)
 INCLUDE		= .
 
 # Rules
-all:		$(OBJS)
+all:		$(NAME)	
+
+$(NAME):	$(OBJS)
 			$(AR) $(NAME) $(OBJS)
 			$(RANLIB) $(NAME)
 

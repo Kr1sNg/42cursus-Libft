@@ -1,40 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/08 09:22:49 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 17:12:27 by tat-nguy         ###   ########.fr       */
+/*   Created: 2024/11/08 09:18:25 by tat-nguy          #+#    #+#             */
+/*   Updated: 2024/11/09 11:53:00 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 **	LIBRARY: N/A
-**	SYNOPSIS: remove and free all the linked list
-**  
-**	DESCRIPTION:
-** 	Deletes and frees the given node and every successor of that node, using
-**  the function ’del’ and free(3). Finally, the pointer to the list must be
-**  set to NULL.
-**    
+**	SYNOPSIS: add the node to the end of the linked list
+**
 **	RETURN VALUE: N/A
 */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*tmp;
 
-	while (*lst != NULL)
+	if (!new)
+		return ;
+	if (*lst == NULL)
+		*lst = new;
+	else
 	{
-		tmp = *lst;
-		*lst = (*lst)->next;
-		if (del != NULL)
-			del(tmp->content);
-		free(tmp);
+		tmp = ft_lstlast(*lst);
+		tmp->next = new;
 	}
-	*lst = NULL;
 }

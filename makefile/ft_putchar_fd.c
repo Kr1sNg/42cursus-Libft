@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:26:39 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/07 13:28:21 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/09 11:58:58 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 **	SYNOPSIS: write a character to the given file
 **
 **	DESCRIPTION:
-** 	Outputs the character ’c’ to the given file descriptor.
+** 	Outputs the character 'c' to the given file descriptor.
 **
 **	RETURN VALUE: N/A
 */

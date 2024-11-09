@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:45:44 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/07 13:45:47 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/09 11:59:05 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 **	SYNOPSIS: write a string (followed by a newline) to the given file
 **
 **	DESCRIPTION:
-** 	Outputs the string ’s’ to the given file descriptor followed by a newline.
+** 	Outputs the string 's' to the given file descriptor followed by a newline.
 **
 **	RETURN VALUE: N/A
 */

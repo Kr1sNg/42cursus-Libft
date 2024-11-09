@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 17:56:40 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/06 17:56:42 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/09 12:01:32 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 **	SYNOPSIS: remove unwanted characters at the beginning and the end of string
 **
 **	DESCRIPTION:
-** 	Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters
-**	specified in ’set’ removed from the beginning and the end of the string.
+** 	Allocates (with malloc(3)) and returns a copy of 's1' with the characters
+**	specified in 'set' removed from the beginning and the end of the string.
 **
 **	RETURN VALUE:
 **	The trimmed string. Or NULL if the allocation fails.

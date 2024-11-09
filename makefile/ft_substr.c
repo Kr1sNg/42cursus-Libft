@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 15:35:19 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 18:18:20 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/09 12:01:51 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 **	SYNOPSIS: extract substring from string.
 **
 **	DESCRIPTION:
-** 	Allocates (with malloc(3)) and returns a substring from the string ’s’.
-** 	Substring begins at index (not char) ’start’ and is of maximum size ’len’.
+** 	Allocates (with malloc(3)) and returns a substring from the string 's'.
+** 	Substring begins at index (not char) 'start' and is of maximum size 'len'.
 **
 **	RETURN VALUE:
 **	The substring. Or NULL if the allocation fails.
