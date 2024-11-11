@@ -25,6 +25,24 @@
 
 #include "libft.h"
 
+static int	ft_ilen(long n)
+{
+	int		count;
+
+	count = 1;
+	if (n < 0)
+	{
+		count++;
+		n = -n;
+	}
+	while (n / 10 >= 1)
+	{
+		n = n / 10;
+		count++;
+	}
+	return (count);
+}
+
 static	void	recursive(long nb, char *str, int *i)
 {
 	if (nb >= 10)
@@ -35,17 +53,19 @@ static	void	recursive(long nb, char *str, int *i)
 char	*ft_itoa(int n)
 {
 	int		i;
+	int		len;
 	long	nb;
 	char	*str;
 
-	str = malloc(sizeof(char) * 12);
+	nb = n;
+	len = ft_ilen(nb);
+	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
 	i = 0;
 	while (i < 12)
 		str[i++] = '\0';
 	i = 0;
-	nb = n;
 	if (nb < 0)
 	{
 		str[i] = '-';
@@ -62,7 +82,7 @@ char	*ft_itoa(int n)
 int main(void)
 {
     char *abc;
-           abc = ft_itoa(2147483647);
+           abc = ft_itoa(-2147483648);
        printf("%s\n", abc);
        free(abc);
 }

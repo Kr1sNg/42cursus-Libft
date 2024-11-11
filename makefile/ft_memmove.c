@@ -20,7 +20,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t	i;
 
-	if (!dest || !src)
+	if (!dest && !src)
 		return (NULL);
 	if (dest > src && src + n > dest)
 	{
@@ -28,7 +28,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		while (i > 0)
 		{
 			i--;
-			((char *)dest)[i] = ((const char *)src)[i];
+			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 		}
 	}
 	else
@@ -36,7 +36,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		i = 0;
 		while (i < n)
 		{
-			((char *)dest)[i] = ((const char *)src)[i];
+			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 			i++;
 		}
 	}
@@ -48,14 +48,15 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 #include <string.h>
 int main(void)
 {
+	
 	char	src1[] = "this_is_9";
-	char	*dst1 = src1 + 5;
+	char	*dst1 = NULL;
 	printf("dst1: %s.\n", dst1);
-	printf("memmove: %s.\n", (char *)memmove(dst1, src1, 8));
+	printf("memmove: %s.\n", (char *)memmove(dst1, src1, 5));
 
 	char	src2[] = "THIS_IS_9";
-	char	*dst2 = src2 + 5;
+	char	*dst2 = NULL;
 	printf("dst2: %s.\n", dst2);
-	printf("ft_memmove: %s.\n", (char *)ft_memmove(dst2, src2, 8));
+	printf("ft_memmove: %s.\n", (char *)ft_memmove(dst2, src2, 5));
 }
 */

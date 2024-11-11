@@ -31,30 +31,36 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	if (!f)
 		return ;
 	i = 0;
-	while (s[i])
+	while (s[i] != '\0')
 	{
-		(*f)(i, s);
+		(*f)(i, &s[i]);
 		i++;
 	}
 }
 
 /*
 #include <stdio.h>
-// Convert character to uppercase if index is even, lowercase if odd
-void	ft_touplow(unsigned int i, char *s)
+
+void    iter(unsigned int i, char *c)
 {
-	if (s[i] >= 'a' && s[i] <= 'z')
-			s[i] = s[i] - ('a' - 'A');
-	else if (s[i] >= 'A' && s[i] <= 'Z')
-			s[i] = s[i] + ('a' - 'A');
+    static int indexArray[11] = {0};
+
+    if (i > 10 || indexArray[i] == 1)
+        write(1, "wrong index\n", 12);
+    else
+        indexArray[i] = 1;
+    if (*c >= 'a' && *c <= 'z')
+        *c = *c - 32;
+    else if (*c >= 'A' && *c <= 'Z')
+        *c = *c + 32;
 }
 
 int main(void)
 {
-	char	s[] = "ThIs Is Cs50 FrOm HaRdVaRd UnIvErSiTy";
+	char	s[] = "This is";
 	printf("ft_striteri before: %s\n", s);
 
-	ft_striteri(s, &ft_touplow);
+	ft_striteri(s, &iter);
 	printf("ft_striteri after: %s\n", s);
 	return (0);
 }

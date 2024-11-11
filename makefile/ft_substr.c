@@ -34,8 +34,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	slen = ft_strlen(s);
 	if (start >= slen)
-		return (NULL);
-	len = slen - start;
+		return (ft_strdup(""));
+	if (len > slen - start)
+		len = slen - start;
 	sub = malloc(sizeof(char) * (len + 1));
 	if (!sub)
 		return (NULL);
@@ -51,13 +52,15 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 /*
 #include <stdio.h>
+#include <string.h>
 int	main(void)
 {
-	char *s = "This is 9";
-	unsigned int start = 12;
-	unsigned int len = 6;
-	char *sub = ft_substr(s, start, len);
-	printf("ft_substr: %s\n", sub);
+	//char *s = "lorem ipsum dolor sit amet";
+	//unsigned int start = 29;
+	//unsigned int len = 10;
+	char *sub = ft_substr("tripouille", 100, 1);
+	printf("ft_substr: %s|\n", sub);
+	printf("%i\n", strcmp(sub, ""));
 	free(sub);
 
 	return (0);

@@ -25,7 +25,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	if (size < d_len)
 		return (size + s_len);
 	i = 0;
-	while (src[i] != '\0' && (d_len + i < size - 1))
+	while (src[i] != '\0' && (d_len + i < size - 1) && size > 0)
 	{
 		dst[d_len + i] = src[i];
 		i++;
@@ -36,17 +36,17 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 /*
 #include <stdio.h>
-#include <bsd/string.h>
+#include <string.h>
 int	main(void)
 {
-	unsigned int	s = 0; 
-	char	*src = "This is 11.";
-	char	dst1[20] = "This is 9";
-	char	dst2[20] = "This is 9";
+	unsigned int	s = -1; 
+	//char	*src = (char *)"AAAAAAAAA";
+	//char	dst1[30];
+	char	dst2[30];
 
-	printf("len_dst1: %lu, len_dst2: %lu\n", ft_len(dst1), ft_len(dst2));
-	printf("strlcat: %lu, dst: %s\n", strlcat(dst1, src, s), dst1);
-	printf("ft_strlcat: %lu, dst: %s\n", ft_strlcat(dst2, src, s), dst2);
+	//printf("len_dst1: %lu, len_dst2: %lu\n", ft_len(dst1), ft_len(dst2));
+	//printf("strlcat: %lu, dst: %s\n", strlcat(dst1, "123", s), dst1);
+	printf("ft_strlcat: %lu, dst: %s\n", ft_strlcat(dst2, "AAAAAA", s), dst2);
 	return (0);
 }
 */

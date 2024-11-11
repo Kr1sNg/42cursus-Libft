@@ -19,13 +19,13 @@ char	*ft_strrchr(const char *str, int c)
 
 	i = 0;
 	count = -1;
-	while (str[i] != '\0')
+	while ((unsigned char)str[i] != '\0')
 	{
-		if (str[i] == c)
+		if ((unsigned char)str[i] == (unsigned char)c)
 			count = i;
 		i++;
 	}
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 		return ((char *)(str + i));
 	else if (count != -1)
 		return ((char *)(str + count));
@@ -38,10 +38,10 @@ char	*ft_strrchr(const char *str, int c)
 #include <string.h>
 int	main(void)
 {
-	const char *str = "This is 9.";
-	int	c = (char)'.';
-	printf("strrchr: %s.\n", strrchr(str, c));
-	printf("ft_strrchr: %s.\n", ft_strrchr(str, c));
+	const char *str = "tripouille";
+	//int	c = (char)'.';
+	printf("strrchr: %s.\n", strrchr(str, 't' + 256));
+	printf("ft_strrchr: %s.\n", ft_strrchr(str, 't' + 256));
 	return (0);
 }
 */

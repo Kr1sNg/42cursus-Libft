@@ -17,13 +17,13 @@ char	*ft_strchr(const char *str, int c)
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while ((unsigned char)str[i] != '\0')
 	{
-		if (str[i] == c)
+		if ((unsigned char)str[i] == (unsigned char)c)
 			return ((char *)(str + i));
 		i++;
 	}
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 		return ((char *)(str + i));
 	return (NULL);
 }
@@ -33,10 +33,10 @@ char	*ft_strchr(const char *str, int c)
 #include <string.h>
 int	main(void)
 {
-	const char *str = "This is 9";
-	int	c = '9';
-	printf("strchr: %s.\n", strchr(str, c));
-	printf("ft_strchr: %s.\n", ft_strchr(str, c));
+	const char *s = "tripouille";
+	//int	c = '9';
+	printf("strchr: %s.\n", strchr(s, 't' + 256));
+	printf("ft_strchr: %s.\n", ft_strchr(s, 't' + 256));
 	return (0);
 }
 */

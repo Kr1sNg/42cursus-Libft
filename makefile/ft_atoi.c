@@ -47,7 +47,7 @@ int	ft_atoi(const char *nptr)
 	return (nb * sign);
 }
 
-
+/*
 #include <stdlib.h>
 #include <stdio.h>
 int main(void)
@@ -56,4 +56,4 @@ int main(void)
 	printf("atoi: %i\n", atoi(str));
 	printf("ft_atoi: %i\n", ft_atoi(str));
 }
-
+*/

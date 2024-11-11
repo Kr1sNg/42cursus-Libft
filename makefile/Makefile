@@ -40,7 +40,9 @@ BONUS_OBJS	= $(BONUS_SRCS:.c=.o)
 INCLUDE		= .
 
 # Rules
-all:		$(OBJS)
+all:		$(NAME)
+
+$(NAME):	$(OBJS)
 			$(AR) $(NAME) $(OBJS)
 			$(RANLIB) $(NAME)
 
