@@ -6,7 +6,7 @@
 /*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:39:33 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 00:12:46 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/11/12 13:18:12 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,9 +62,6 @@ char	*ft_itoa(int n)
 	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
-	i = 0;
-	while (i < 12)
-		str[i++] = '\0';
 	i = 0;
 	if (nb < 0)
 	{
