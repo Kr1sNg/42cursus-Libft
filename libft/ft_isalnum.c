@@ -6,9 +6,22 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 17:53:49 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/04 18:44:58 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 18:48:09 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	LIBRARY: ctype.h
+**	SYNOPSIS: character classification functions
+**
+**	DESCRIPTION:
+** 	checks for an alphanumeric character;
+**	it is equivalent to (isalpha(c) || isdigit(c))
+**
+**	RETURN VALUE:
+**	The values returned are nonzero if the character 'c' falls into the tested
+**	class, and zero (0) if not.
+*/
 
 #include "libft.h"
 

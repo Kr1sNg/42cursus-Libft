@@ -3,16 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 14:04:34 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/06 14:04:56 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 18:56:12 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The memchr() function scans the initial n bytes of the memory area pointed
-// to by s for the first instance of c. Both c and the bytes of the memory area
-// pointed to by s are interpreted as unsigned char. */
+/*
+**	LIBRARY: string.h
+**	SYNOPSIS: scan memory for a character
+**
+**	DESCRIPTION:
+** 	The memchr() function scans the initial 'n' bytes of the memory area
+**	pointed to by 's' for the first instance of 'c'. Both 'c' and the bytes
+**	of the memory area pointed to by 's' are interpreted as unsigned char.
+**
+**	RETURN VALUE:
+**	A pointer to the matching byte or NULL if the character does not occur in
+**	the given memory area.
+*/
 
 #include "libft.h"
 

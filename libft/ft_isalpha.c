@@ -6,9 +6,22 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:43:38 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 18:20:58 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 18:49:18 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	LIBRARY: ctype.h
+**	SYNOPSIS: character classification functions
+**
+**	DESCRIPTION:
+** 	checks for an alphabetic character;
+**	it is equivalent to (isupper(c) || islower(c))
+**
+**	RETURN VALUE:
+**	The values returned are nonzero if the character 'c' falls into the tested
+**	class, and zero (0) if not.
+*/
 
 #include "libft.h"
 

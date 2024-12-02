@@ -6,9 +6,22 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:27:59 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/07 08:01:46 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:27:40 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	LIBRARY: string.h
+**
+**	SYNOPSIS: calculate the length of a string
+**
+**	DESCRIPTION:
+** 	The strlen() function calculates length of the string pointed to by 's',
+**	excluding the terminating null byte ('\0').
+**
+**	RETURN VALUE:
+**	The number of bytes in the string pointed to by 's'.
+*/
 
 #include "libft.h"
 

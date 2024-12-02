@@ -3,12 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 18:26:29 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/05 18:26:32 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 18:32:58 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	LIBRARY: strings.h
+**	SYNOPSIS: zero a byte string
+**
+**	DESCRIPTION:
+** 	The  bzero() function erases the data in the 'n' bytes of the memory
+**	starting at the location pointed to by 's', by writing zeros (bytes 
+**	containing '\0') to that area.
+**
+**	RETURN VALUE: N/A
+*/
 
 #include "libft.h"
 

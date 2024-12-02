@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 19:22:15 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/09 11:59:54 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:06:15 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 **	SYNOPSIS: separate a string into substrings delimited by a character
 **
 **	DESCRIPTION:
-** 	Allocates (with malloc(3)) and returns an array of strings obtained by
+** 	Allocates (with malloc) and returns an array of strings obtained by
 **	splitting 's' using the character 'c' as a delimiter. The array must end
 **	with a NULL pointer.
 **

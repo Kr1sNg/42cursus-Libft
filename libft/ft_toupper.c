@@ -3,12 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <tat-nguy@student.42perpignan.fr  +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 21:07:39 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/04 21:16:09 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:43:53 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	LIBRARY: ctype.h
+**	SYNOPSIS: convert lowercase to uppercase
+**
+**	DESCRIPTION:
+** 	If 'c' is a lowercase letter, toupper() returns its uppercase equivalent,
+**	if an uppercase representation exists in the current locale. Otherwise, it
+**	returns 'c'.
+**
+**	RETURN VALUE:
+**	The value returned is that of the converted letter, or 'c' if the
+**	conversion was not possible.
+*/
 
 #include "libft.h"
 

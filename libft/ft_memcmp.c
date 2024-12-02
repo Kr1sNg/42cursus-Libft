@@ -3,15 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 14:36:14 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/06 14:36:17 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 18:59:11 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The memcmp() function compares the first n bytes (each interpreted as
-// unsigned char) of the memory areas s1 and s2 */
+/*
+**	LIBRARY: string.h
+**	SYNOPSIS: compare memory areas
+**
+**	DESCRIPTION:
+** 	The memcmp() function compares the first 'n' bytes (each interpreted as
+**	unsigned char) of the memory areas 's1' and 's2'
+**
+**	RETURN VALUE:
+**	An integer less than, equal to, or greater than zero if the first 'n' bytes
+**	of 's1' is found, respectively, to be less than, to match, or be greater
+**	than the first 'n' bytes of 's2'.
+*/
 
 #include "libft.h"
 

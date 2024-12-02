@@ -6,9 +6,21 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:04:40 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 18:56:32 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 18:33:22 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	LIBRARY: stdlib.h
+**	SYNOPSIS: convert string into int.
+**
+**	DESCRIPTION:
+** 	The atoi() function converts the initial portion of the string pointed to
+**	by 'nptr' to int.
+**
+**	RETURN VALUE:
+**	The converted value or 0 on error. 
+*/
 
 #include "libft.h"
 

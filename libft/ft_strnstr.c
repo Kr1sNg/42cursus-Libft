@@ -3,12 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 14:36:38 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/05 15:30:06 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:37:42 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	LIBRARY: <bsd/string.h> (libbsd, -lbsd)
+**
+**	SYNOPSIS: locate a substring in a string
+**
+**	DESCRIPTION:
+** 	The strnstr() function locates the first occurrence of the null-terminated
+**	string 'little' in the string 'big', where not more than len characters are
+**	searched. Characters that appear after a ‘\0’ character are not searched.
+**	
+**	RETURN VALUE:
+**	If 'little' is an empty string, 'big' is returned;
+**	if 'little' occurs nowhere in 'big', NULL is returned;
+**	or a pointer to first char of first occurrence of 'little' is returned.
+*/
 
 #include "libft.h"
 

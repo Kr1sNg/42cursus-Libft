@@ -6,11 +6,24 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 11:43:29 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 08:30:30 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:23:40 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// return length of (src + dest) or (src + size (if size < dest))
+/*
+**	LIBRARY: <bsd/string.h> (libbsd, -lbsd)
+**
+**	SYNOPSIS: size-bounded string concatenation
+**
+**	DESCRIPTION:
+** 	The strlcat() function appends the NUL-terminated string 'src' to
+**	the end of 'dst'. It will append at most (size - strlen(dst) - 1) bytes,
+**	NUL-terminating the result.
+**
+**	RETURN VALUE:
+**	the total length of the string it tried to create.
+**	return length of (src + dest) or (src + size (if size < dest))
+*/
 
 #include "libft.h"
 

@@ -3,12 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <tat-nguy@student.42perpignan.fr  +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:58:35 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/04 20:21:08 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 18:51:57 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	LIBRARY: ctype.h
+**	SYNOPSIS: character classification functions
+**
+**	DESCRIPTION:
+** 	checks for any printable character including space.
+**
+**	RETURN VALUE:
+**	The values returned are nonzero if the character 'c' falls into the tested
+**	class, and zero (0) if not.
+*/
 
 #include "libft.h"
 

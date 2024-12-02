@@ -3,16 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 10:31:13 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/06 10:31:16 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:03:14 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The  memmove() function copies n bytes from memory area src to memory area 
-// dest. The memory areas may overlap (src + n > dest): copying from the end
-// of the src back to the beginning */
+/*
+**	LIBRARY: string.h
+**	SYNOPSIS: copy memory area
+**
+**	DESCRIPTION:
+** 	The memmove() function copies 'n' bytes from memory area 'src' to memory
+**	area 'dest'. The memory areas may overlap (src + n > dest): copying from
+**	the end of the 'src' back to the beginning.
+**
+**	RETURN VALUE:
+**	a pointer to 'dest'
+*/
 
 #include "libft.h"
 

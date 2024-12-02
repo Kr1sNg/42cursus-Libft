@@ -6,12 +6,21 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 09:45:51 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 17:59:53 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:00:59 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*	The memcpy() function copies n bytes (even 'null' characters) from memory 
-// area src to memory area dest. The memory areas must not overlap. */
+/*
+**	LIBRARY: string.h
+**	SYNOPSIS: copy memory area
+**
+**	DESCRIPTION:
+** 	The memcpy() function copies 'n' bytes (even 'null' characters) from memory 
+**	area 'src' to memory area 'dest'. The memory areas must not overlap.
+**
+**	RETURN VALUE:
+**	The memcpy() function returns a pointer to 'dest'
+*/
 
 #include "libft.h"
 

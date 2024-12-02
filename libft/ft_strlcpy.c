@@ -6,9 +6,22 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 10:20:04 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 08:31:03 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:25:45 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	LIBRARY: <bsd/string.h> (libbsd, -lbsd)
+**
+**	SYNOPSIS: size-bounded string copying
+**
+**	DESCRIPTION:
+** 	The strlcpy() function copies up to (size - 1) characters from the
+**	NUL-terminated string 'src' to 'dst', NUL-terminating the result.
+**
+**	RETURN VALUE:
+**	the length of 'src'
+*/
 
 #include "libft.h"
 

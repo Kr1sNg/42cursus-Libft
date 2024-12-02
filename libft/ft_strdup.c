@@ -6,9 +6,24 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 16:39:27 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 08:29:33 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:18:30 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	LIBRARY: string.h
+**
+**	SYNOPSIS: duplicate a string
+**
+**	DESCRIPTION:
+** 	The strdup() function returns a pointer to a new string which is a
+**	duplicate of the string 's'. Memory for the new string is obtained with
+**	malloc(), and can be freed with free().
+**
+**	RETURN VALUE:
+**	On success, the strdup() function returns a pointer to the duplicated string.
+**	It returns NULL if insufficient memory was available.
+*/
 
 #include "libft.h"
 

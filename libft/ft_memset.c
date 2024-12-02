@@ -3,12 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:40:40 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/05 17:40:54 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:04:38 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	LIBRARY: string.h
+**	SYNOPSIS: fill memory with a constant byte
+**
+**	DESCRIPTION:
+** 	The memset() function fills the first 'n' bytes of the memory area pointed
+**	to by 's' with the constant byte 'c'.
+**
+**	RETURN VALUE:
+**	The memset() function returns a pointer to the memory area 's'
+*/
 
 #include "libft.h"
 

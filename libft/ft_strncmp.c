@@ -6,9 +6,23 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 21:30:21 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/08 17:43:11 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:32:17 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	LIBRARY: string.h
+**	SYNOPSIS: compare two strings
+**
+**	DESCRIPTION:
+** 	The strncmp() function compares only the first (at most) 'n' bytes the two
+**	strings 's1' and 's2'. The comparison is done using unsigned characters.
+**
+**	RETURN VALUE:
+**	An integer less than, equal to, or greater than zero if the first 'n' bytes
+**	of 's1' is found, respectively, to be less than, to match, or be greater
+**	than 's2'.
+*/
 
 #include "libft.h"
 

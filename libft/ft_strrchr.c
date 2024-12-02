@@ -3,12 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tat-nguy <tat-nguy@student.42perpignan.fr  +#+  +:+       +#+        */
+/*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 07:29:29 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/05 08:51:58 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:38:57 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	LIBRARY: string.h
+**
+**	SYNOPSIS: locate character in string
+**
+**	DESCRIPTION:
+** 	The strchr() function returns a pointer to the last occurrence of the
+**	character 'c' in the string 's'.
+**
+**	RETURN VALUE:
+**	a pointer to the matched character or NULL if the character is not found.
+*/
 
 #include "libft.h"
 
