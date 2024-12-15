@@ -80,23 +80,35 @@ At 42 we're not allowed to use some standard libraries on our projects, so we ha
 
 
 ## :construction_worker: How to Run
-```bash
-# *************COMMANDS************ #
-# run - run compile all the libtest with the your libft and run the all tests
-$ make all
-# clean - remove the .o and .c files 
-$ make clean
-# fclean - remove the .o and .c files and the .a
-$ make fclean
-# re - remove all files and remake all
-$ make re
 
-# after run one time the the comand all 
-# you can use compile others files .c using this lib 
-# and using the function of then.
-$ cc main.c -L . -lft
+### Requirements
 
+The library is written in C language and thus needs the **`gcc` compiler** and some standard **C libraries** to run.
+
+### Instructions
+
+**1. Compiling the library**
+
+To compile the library, run:
+
+```shell
+$ cd path/to/libft && make
 ```
+
+**2. Using it in your code**
+
+To use the library functions in your code, include its header:
+
+```C
+#include "libft.h"
+```
+
+and, when compiling your code, add the required flags:
+
+```shell
+-lft -L path/to/libft.a -I path/to/libft.h
+```
+---
 
 ## :bug: Issues
 
