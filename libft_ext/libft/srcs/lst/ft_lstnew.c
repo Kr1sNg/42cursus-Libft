@@ -16,7 +16,7 @@
 **
 **	DESCRIPTION:
 ** 	Allocates (with malloc(3)) and returns a new node. The member variable
-**  'content' is initialized with the value of the parameter 'content'.
+**  'data' is initialized with the value of the parameter 'data'.
 **  The variable 'next' is initialized to NULL.
 **
 **	RETURN VALUE:
@@ -26,14 +26,14 @@
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+t_list	*ft_lstnew(void *data)
 {
 	t_list	*node;
 
 	node = malloc(sizeof(t_list));
 	if (!node)
 		return (NULL);
-	node->content = content;
+	node->data = data;
 	node->next = NULL;
 	return (node);
 }

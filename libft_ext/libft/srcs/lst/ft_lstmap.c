@@ -15,9 +15,9 @@
 **	SYNOPSIS: create new list from the given linked list
 **  
 **	DESCRIPTION:
-** 	Iterates the list 'lst' and applies the function 'f' on the content of
+** 	Iterates the list 'lst' and applies the function 'f' on the data of
 **  each node. Creates a new list resulting of the successive applications of
-**  the function 'f'. The 'del' function is used to delete the content of a 
+**  the function 'f'. The 'del' function is used to delete the data of a 
 **  node if needed.
 **    
 **	RETURN VALUE:
@@ -31,20 +31,20 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*newhead;
 	t_list	*cur;
-	void	*newcontent;
+	void	*newdata;
 
 	if (!lst || !f)
 		return (NULL);
 	newhead = NULL;
 	while (lst != NULL)
 	{
-		newcontent = f(lst->content);
-		cur = ft_lstnew(newcontent);
+		newdata = f(lst->data);
+		cur = ft_lstnew(newdata);
 		if (cur == NULL)
 		{
 			if (del != NULL)
 			{
-				del(newcontent);
+				del(newdata);
 				ft_lstclear(&newhead, del);
 			}
 			return (NULL);

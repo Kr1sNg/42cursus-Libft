@@ -15,7 +15,7 @@
 **	SYNOPSIS: apply function to all the node of linked list
 **  
 **	DESCRIPTION:
-** 	Iterates the list 'lst' and applies the function 'f' on the content of
+** 	Iterates the list 'lst' and applies the function 'f' on the data of
 **  each node.
 **    
 **	RETURN VALUE: N/A
@@ -29,7 +29,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		return ;
 	while (lst != NULL)
 	{
-		f(lst->content);
+		f(lst->data);
 		lst = lst->next;
 	}
 }
