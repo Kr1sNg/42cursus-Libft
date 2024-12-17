@@ -11,27 +11,29 @@
 </p>
 
 
-## :sparkles: What is Libft?
+## :sparkles: What is Libft extended ver.?
 
-Libft is an individual project at 42 that requires us to re-create some standard C library functions including some additional ones that can be used later to build a library of useful functions for the rest of the program.
+Libft is an individual project at 42 School that requires students to re-create on their own not only standard C library functions but also some other additionals to build a library of useful functions for themselves.
 
-At 42 we're not allowed to use some standard libraries on our projects, so we have to keep growing this library with our own functions as we go farther in the program.
+This is my enhanced library of functions which includes the required Libft of 42 School and my other functions.
 
 ---
 
 ## :bookmark_tabs: List of Fucntions
 
-### Functions of [`is character`](srcs/is)
+#### Functions of [`is character`](libft/srcs/is)
 
-### Functions of [`linked list`](srcs/lst)
+#### Functions of [`linked list`](libft/srcs/lst)
 
-### Functions of [`memory`](srcs/mem)
+#### Functions of [`memory`](libft/srcs/mem)
 
-### Functions of [`put`](srcs/put)
+#### Functions of [`put`](libft/srcs/put)
 
-### Functions of [`string`](srcs/str)
+#### Functions of [`string`](libft/srcs/str)
 
-### Functions of [`to`](srcs/to)
+#### Functions of [`to`](libft/srcs/to)
+
+#### Functions of [`printf`](libft/srcs/ft_printf)
 
 ---
 
