@@ -23,7 +23,7 @@
 **	a pointer to the matched character or NULL if the character is not found.
 */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 char	*ft_strrchr(const char *str, int c)
 {

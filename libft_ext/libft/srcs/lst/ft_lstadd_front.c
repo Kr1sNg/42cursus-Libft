@@ -17,7 +17,7 @@
 **	RETURN VALUE: N/A
 */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

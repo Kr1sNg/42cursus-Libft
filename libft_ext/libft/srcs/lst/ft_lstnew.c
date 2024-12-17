@@ -24,7 +24,7 @@
 **	Or NULL if the allocation fails.
 */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 t_list	*ft_lstnew(void *data)
 {

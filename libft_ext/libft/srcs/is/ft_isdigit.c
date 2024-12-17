@@ -22,7 +22,7 @@
 **	class, and zero (0) if not.
 */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 int	ft_isdigit(int c)
 {

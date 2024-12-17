@@ -22,7 +22,7 @@
 **	RETURN VALUE: N/A
 */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {

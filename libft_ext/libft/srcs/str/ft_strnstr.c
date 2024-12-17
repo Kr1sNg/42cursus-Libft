@@ -26,7 +26,7 @@
 **	or a pointer to first char of first occurrence of 'little' is returned.
 */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

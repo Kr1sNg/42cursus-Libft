@@ -25,7 +25,7 @@
 **	Or NULL if the allocation fails.
 */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

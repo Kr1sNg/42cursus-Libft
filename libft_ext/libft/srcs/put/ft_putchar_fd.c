@@ -20,7 +20,7 @@
 **	RETURN VALUE: N/A
 */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

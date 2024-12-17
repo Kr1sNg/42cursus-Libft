@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 12:42:22 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/10/17 14:21:15 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2024/12/17 16:28:41 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,25 +54,13 @@ void	ft_sorted_list_insert(t_list **begin_list, void *data, int (*cmp)())
 }
 
 /*
-int	ft_cmp_int(void *d1, void *d2)
+static int	ft_cmp_int(void *d1, void *d2)
 {
 	return (*(int *)d1 - *(int *)d2);
 }
 
-void	ft_list_clear(t_list *begin)
-{
-	t_list	*temp;
-
-	while (begin != NULL)
-	{
-		temp = begin;
-		begin = begin->next;
-		free(temp);
-	}
-}
-
 #include <stdio.h>
-void	ft_printf_list(t_list *begin)
+static void	ft_printf_list(t_list *begin)
 {
 	while (begin != NULL)
 	{
@@ -85,7 +73,7 @@ void	ft_printf_list(t_list *begin)
 int	main(void)
 {
 	t_list *list = NULL;
-	int a = 42;//, b = 113, c = -17, d = 8, e = -1000, f = 0;
+	int a = 42, b = 113, c = -17, d = 8, e = -1000, f = 0;
 	int	h = 9999;
 
     ft_list_push_front(&list, &f);
@@ -103,4 +91,5 @@ int	main(void)
 
 	ft_list_clear(list);
 	return (0);
-}*/
+}
+*/

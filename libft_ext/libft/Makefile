@@ -12,53 +12,45 @@
 
 # Variables
 NAME		= libft.a
-CC 			= cc
-CFLAGS 		= -Wall -Wextra -Werror
+
+DIR_SRCS	= srcs
+DIR_OBJS	= objs
+SUBDIRS		= is lst mem put str to ft_printf
+
+# Paths and Files
+SRCS_DIRS	= $(foreach dir, $(SUBDIRS), $(addprefix $(DIR_SRCS)/, $(dir)))
+OBJS_DIRS	= $(foreach dir, $(SUBDIRS), $(addprefix $(DIR_OBJS)/, $(dir)))
+
+SRCS		= $(foreach dir, $(SRCS_DIRS), $(wildcard $(dir)/*.c))
+OBJS		= $(subst $(DIR_SRCS), $(DIR_OBJS), $(SRCS:.c=.o))
+
+INCLUDES	= -I includes
+
+CC			= clang
+CFLAGS		= -Wall -Wextra -Werror
 AR			= ar -rc
 RANLIB		= ranlib
 RM			= rm -rf
-
-# Paths and Files
-SRCS 		= ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
-				ft_isascii.c ft_isdigit.c ft_isprint.c ft_memchr.c \
-				ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c \
-				ft_strdup.c ft_strlcat.c ft_strlcpy.c ft_strlen.c \
-				ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_tolower.c \
-				ft_toupper.c ft_itoa.c ft_putchar_fd.c ft_putendl_fd.c \
-				ft_putnbr_fd.c ft_putstr_fd.c ft_split.c ft_striteri.c \
-				ft_strjoin.c ft_strmapi.c ft_strtrim.c ft_substr.c
-
-OBJS 		= $(SRCS:.c=.o)
-
-BONUS_SRCS	= ft_lstadd_back_bonus.c ft_lstadd_front_bonus.c \
-				ft_lstclear_bonus.c ft_lstdelone_bonus.c ft_lstiter_bonus.c \
-				ft_lstlast_bonus.c ft_lstmap_bonus.c ft_lstnew_bonus.c \
-				ft_lstsize_bonus.c
-
-BONUS_OBJS	= $(BONUS_SRCS:.c=.o)
-
-INCLUDE		= .
+CR_DIR		= mkdir -p
 
 # Rules
+$(DIR_OBJS)/%.o:	$(DIR_SRCS)/%.c
+			@$(CR_DIR) $(OBJS_DIRS)
+			@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+
 all:		$(NAME)
 
 $(NAME):	$(OBJS)
-			$(AR) $(NAME) $(OBJS)
-			$(RANLIB) $(NAME)
-
-bonus:		$(BONUS_OBJS)
-			$(AR) $(NAME) $(BONUS_OBJS)
-			$(RANLIB) $(NAME)
-
-.c.o:
-			$(CC) $(CFLAGS) -I $(INCLUDE) -c $< -o $@
+			@$(AR) $(NAME) $(OBJS)
+			@$(RANLIB) $(NAME)
 
 clean:
-			$(RM) $(OBJS) $(BONUS_OBJS)
+			@$(RM) $(OBJS)
+			@$(RM) $(DIR_OBJS)
 
 fclean:		clean
-			$(RM) $(NAME)
+			@$(RM) $(NAME)
 
 re:			fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re

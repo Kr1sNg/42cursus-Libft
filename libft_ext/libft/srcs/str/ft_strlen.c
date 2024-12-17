@@ -23,7 +23,7 @@
 **	The number of bytes in the string pointed to by 's'.
 */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 size_t	ft_strlen(const char *str)
 {

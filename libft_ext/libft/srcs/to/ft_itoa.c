@@ -23,7 +23,7 @@
 **	Or NULL if the allocation fails.
 */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 static int	ft_ilen(long n)
 {

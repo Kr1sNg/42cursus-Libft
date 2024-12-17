@@ -22,16 +22,7 @@
 **	The converted value or 0 on error. 
 */
 
-#include "libft.h"
-
-static	int	ft_isspace(int c)
-{
-	if (c == ' ' || c == '\f' || c == '\n' || c == '\r'
-		|| c == '\t' || c == '\v')
-		return (8192);
-	else
-		return (0);
-}
+#include "../../includes/libft.h"
 
 int	ft_atoi(const char *nptr)
 {
