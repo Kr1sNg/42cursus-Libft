@@ -83,7 +83,7 @@ At 42 we're not allowed to use some standard libraries on our projects, so we ha
 
 ### Requirements
 
-The library is written in C language and thus needs the **`gcc` compiler** and some standard **C libraries** to run.
+The library is written in C language and thus needs the **`cc` compiler** and some standard **C libraries** to run.
 
 ### Instructions
 
@@ -100,13 +100,13 @@ $ cd path/to/libft && make
 To use the library functions in your code, include its header:
 
 ```C
-#include "libft.h"
+#include "path/to/libft.h"
 ```
 
-and, when compiling your code, add the required flags:
+and, when compiling your code, add library libft.a or add the required flags:
 
 ```shell
--lft -L path/to/libft.a -I path/to/libft.h
+-lft -L . -lft
 ```
 ---
 
