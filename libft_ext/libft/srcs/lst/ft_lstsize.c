@@ -1,35 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/07 13:44:51 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/11/13 15:32:23 by tat-nguy         ###   ########.fr       */
+/*   Created: 2024/11/08 09:17:34 by tat-nguy          #+#    #+#             */
+/*   Updated: 2024/11/09 11:56:23 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 **	LIBRARY: N/A
-**	SYNOPSIS: write a string to the standard output
+**	SYNOPSIS: count the number of nodes in a list
 **
-**	DESCRIPTION:
-** 	Outputs the string 's' to the standard output
-**
-**	RETURN VALUE: N/A
+**	RETURN VALUE:
+**	The length of the list
 */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
-void	ft_putstr(char *s)
+int	ft_lstsize(t_list *lst)
 {
-	unsigned int	i;
+	int	count;
 
-	i = 0;
-	while (s[i] != '\0')
+	count = 0;
+	while (lst != NULL)
 	{
-		write(1, &s[i], 1);
-		i++;
+		count++;
+		lst = lst->next;
 	}
+	return (count);
 }

@@ -20,7 +20,7 @@
 **	RETURN VALUE: N/A
 */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
 void	ft_putendl(char *s)
 {
@@ -34,4 +34,3 @@ void	ft_putendl(char *s)
 	}
 	write(1, "\n", 1);
 }
-

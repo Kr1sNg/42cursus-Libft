@@ -20,22 +20,21 @@
 **  RETURN VALUE: N/A
 */
 
-#include "libft.h"
+#include "../../includes/libft.h"
 
-void    ft_putnbr(int n)
+void	ft_putnbr(int n)
 {
-    long    nb;
-    char    c;
+	long	nb;
+	char	c;
 
-    nb = n;
-    if (nb < 0)
-    {
-        write(1, "-", 1);
-        nb = -nb;
-    }
-    if (nb >= 10)
-        ft_putnbr(nb / 10, fd);
-    c = (nb % 10) + '0';
-    write(1, &c, 1);
+	nb = n;
+	if (nb < 0)
+	{
+		write(1, "-", 1);
+		nb = -nb;
+	}
+	if (nb >= 10)
+		ft_putnbr(nb / 10);
+	c = (nb % 10) + '0';
+	write(1, &c, 1);
 }
-
