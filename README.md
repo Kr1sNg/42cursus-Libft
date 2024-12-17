@@ -103,7 +103,7 @@ To use the library functions in your code, include its header:
 #include "path/to/libft.h"
 ```
 
-and, when compiling your code, add library libft.a or add the required flags:
+and, when compiling your code, add library `libft.a` or add the required flags:
 
 ```shell
  -L . -lft
