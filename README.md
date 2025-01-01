@@ -106,7 +106,7 @@ To use the library functions in your code, include its header:
 and, when compiling your code, add library `libft.a` or add the required flags:
 
 ```shell
- -L . -lft
+ -L./path/to/libft -lft
 ```
 ---
 
