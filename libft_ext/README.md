@@ -1,4 +1,4 @@
-# libft
+# libft (extended ver.)
 ![image](https://github.com/user-attachments/assets/656f8688-702a-485f-869b-18ece121b11c)
 
 
