@@ -41,19 +41,18 @@ This is my enhanced library of functions which includes the required Libft of 42
 ## :construction_worker: How to Run
 ```bash
 # *************COMMANDS************ #
-# run - run compile all the libtest with the your libft and run the all tests
-$ make all
+# all - compile the library
+$ make (or make all)
 # clean - remove the .o and .c files 
 $ make clean
-# fclean - remove the .o and .c files and the .a
+# fclean - remove the .o and .c and the .a files
 $ make fclean
 # re - remove all files and remake all
 $ make re
 
-# after run one time the the comand all 
-# you can use compile others files .c using this lib 
-# and using the function of then.
-$ cc main.c -L . -lft
+# after running the command make or make all 
+# you can compile others files .c using this library and their functions
+$ cc file.c -L./path/to/folder/libft -lft
 
 ```
 
