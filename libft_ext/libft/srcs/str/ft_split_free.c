@@ -6,7 +6,7 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/08 21:31:41 by tat-nguy          #+#    #+#             */
-/*   Updated: 2025/01/08 21:34:40 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2025/01/08 21:55:12 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,12 @@
 void	ft_split_free(char **arrs)
 {
 	size_t	i;
-	
+
 	i = 0;
 	while (arrs[i] != NULL)
-    {
-        free(arrs[i]);
-        i++;
-    }
-    free(arrs);
+	{
+		free(arrs[i]);
+		i++;
+	}
+	free(arrs);
 }
