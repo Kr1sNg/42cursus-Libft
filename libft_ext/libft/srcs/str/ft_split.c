@@ -6,11 +6,13 @@
 /*   By: tat-nguy <tat-nguy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 19:22:15 by tat-nguy          #+#    #+#             */
-/*   Updated: 2024/12/02 19:06:15 by tat-nguy         ###   ########.fr       */
+/*   Updated: 2025/01/08 21:31:56 by tat-nguy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
+**	NOTICE: Need to use ft_split_free() after using ft_split()
+**
 **	LIBRARY: N/A
 **	SYNOPSIS: separate a string into substrings delimited by a character
 **
@@ -119,13 +121,15 @@ char	**ft_split(char const *s, char c)
 
 /*
 #include <stdio.h>
-int main(void)
+int main(int argc, char **argv)
 {
     char **arrs;
-    char *str = " Hello... The,New - = +  Future.e ! ";
     char charset = ' ';
+
+	if (argc < 2)
+		return (-42);
     int i = 0;
-    arrs = ft_split(str, charset);
+    arrs = ft_split(argv[1], charset);
     if (!arrs)
         return (1);
     while (arrs[i] != NULL)
